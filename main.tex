@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge  Ilya Merochkin} \\ \vspace{10pt}
+    \href{https://t.me/ilya_totl}{\raisebox{-0.2\height}\faTelegram\ \underline{tg}} ~
+    \href{https://github.com/ilyatotl}{\raisebox{-0.2\height}\faGithub\ \underline{github}} ~
+    \href{mailto:fodor.osetrov@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ilya.merochkin@mail.ru}} ~ 
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{C/C++, Golang, Python.}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, Git, Github, LaTeX, CMake.}} \\
+     \textbf{\normalsize{Databases:}}{\normalsize{ MySQL, PostgreSQL.}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher School of Economics}{2021 -- expected 2025}
+      {Bachelor - Software Engineering - \textbf{GPA} - \textbf{8.91}}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Yandex (Group of Antirobot development) }{Dec 2021 -- Jun 2022} 
+      {\underline{C++ Developer Intern}}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        %\begin{multicols}{4}
+            \begin{itemize}
+                \item Currently studying distributed systems.
+                \item Data Structures \& Algorithms (1 year course)
+                \item C++ Course (multithreading, design patterns, smart pointers, oop)
+                \item Computer architecture and operating systems Course (Assembly, C, sockets)
+            \end{itemize}
+        %\end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+          {\href{https://github.com/ilyatotl/http-rest-api}{\textbf{\large{\underline{RestAPI service}}} \href{https://github.com/ilyatotl/http-rest-api}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Golang, PostgreSQL}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A Rest API service that supports user registration, authorization, and authentication}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/ilyatotl/Red-Black-Tree}{\textbf{\large{\underline{Red-black tree}}} \href{https://github.com/ilyatotl/Red-Black-Tree}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{ Implementation of the data structure - red-black tree. }}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\href{https://github.com/ilyatotl/LinuxBasics/tree/master/Sobel}{\textbf{\large{\underline{Sobel filter}}} \href{https://github.com/ilyatotl/LinuxBasics/tree/master/Sobel}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C, C++}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{ Implementation of an algorithm that highlights contours in an image. }}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+          
+      \resumeProjectHeading
+          {\href{https://github.com/ilyatotl/Smart-pointers}{\textbf{\large{\underline{Smart pointers}}} \href{https://github.com/ilyatotl/Smart-pointers}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{A simple implementation of such smart pointers as shared\_ptr and unique\_ptr.}}
+          \resumeItemListEnd
+          
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+
+%-----------INVOLVEMENT---------------
+\section{OTHER ACHIEVEMENTS}
+    \begin{itemize}
+        \item \normalsize{\textbf{Competitive programming:} Prize-winner of all-Siberian Olympiad in Informatics, Individual Olympiad in computer science, Open ITMO olympiad, all-Russian olympiad "Highest test" in Informatic and Regional school olympiad.}
+        \item \normalsize{\textbf{Teaching: } Taught at school 2005, prepared children for competitive programming. Conducted intensive training for the All-Russian Olympiad of schoolchildren among Moscow schoolchildren}
+        \item \normalsize{\textbf{Codeforces rating: 1918.}}
+    \end{itemize}
+ \vspace{-11pt}
+
+
+\end{document}
